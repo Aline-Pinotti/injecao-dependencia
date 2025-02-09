@@ -25,13 +25,13 @@ public class pedidoApplication implements CommandLineRunner {
 		Order order2 = new Order(2282, 800.00, 10.0);
 		Order order3 = new Order(1309, 95.90, 0.0);
 
-		System.out.printf("Pedido código %d", order1.getCode());
+		System.out.printf("Pedido código %d %n", order1.getCode());
 		System.out.printf("Valor total: R$ %.2f%n", orderService.total(order1));
 
-		System.out.printf("Pedido código %d", order2.getCode());
+		System.out.printf("Pedido código %d %n", order2.getCode());
 		System.out.printf("Valor total: R$ %.2f%n", orderService.total(order2));
 
-		System.out.printf("Pedido código %d", order3.getCode());
+		System.out.printf("Pedido código %d %n", order3.getCode());
 		System.out.printf("Valor total: R$ %.2f%n", orderService.total(order3));
 	}
 
